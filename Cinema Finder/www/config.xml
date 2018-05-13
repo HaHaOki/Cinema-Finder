@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "mob.app.help.me"
+        version   = "1.0.0">
+
+    <name>Mobile App</name>
+
+    <description>
+        COMP2361 Assignment 02 16016793
+    </description>
+
+    <author href="worcester.ac.uk" email="havh1_16@uni.worc.ac.uk">
+        WBS Computing
+    </author>
+
+    <preference name="phonegap-version" value="cli-7.0.1" />
+	
+    <preference name="permissions"                value="none"/>   
+	
+	<access origin="*"/>
+   	<plugin name="cordova-plugin-whitelist" version="1" />
+</widget>

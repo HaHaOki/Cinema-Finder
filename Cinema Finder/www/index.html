@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <title>Movie Database App</title>
+    
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+	<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/index.js"type="text/javascript" charset="utf-8" defer></script>
+    <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Kt2m8RQlajz04BJhl0uBlueKzo7TzWU&callback=initMap"></script>
+    <link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+		
+</head>
+
+<body>
+  
+    
+    
+  <!-- Page1 -->
+ 
+  <div data-role="page" id="page1">
+      
+      <!-- Panel -->
+      <div data-role="panel" id="myPanel" data-display="overlay">
+      <h2>Panel Header</h2>
+          <a href="#page1" class="ui-btn-inline">Page One</a>
+          <a href="#page2" class="ui-btn-inline">Page Two</a>
+      </div>
+      
+       <!-- HEADER BAR -->  
+	   <div data-role="header" data-position="fixed"> <!-- fixed to top of screen -->
+		  <h1>Header</h1>
+	   </div>
+      
+      <!-- Content -->
+	   <div data-role="main" class="ui-content">
+            <h2>Movie Search</h2>
+           
+           <!-- Button for opening the panel -->
+           <a href="#myPanel" data-rel="open">Open panel</a>
+           <p>Type in the name of a movie below!</p>
+           
+           <!-- Search bar and button for querying the Open Movie Database -->
+           <div id="searchbar">
+           <input type="text" id="searchbox">
+               <input type="button" id="searchbutton" value="search">
+           </div>
+           
+           
+           <div id="posterContainer">
+           
+           </div>
+           
+            <section id="movieInfo">
+               <p>Title : <span id="movieTitle"></span></p>
+               <p>Genre : <span id="movieGenre"></span></p>
+               <p>Release : <span id="movieRelease"></span></p>
+               <p>Runtime : <span id="movieRuntime"></span></p>
+               <p>Director : <span id="movieDirector"></span></p>
+               <p>Writer : <span id="movieWriter"></span></p>
+               <p>Actor : <span id="movieActors"></span></p>
+               <p>Rating : <span id="movieRating"></span></p>
+           </section>
+           
+            <section id="testInfo">
+               <p>Title : <span id="movieTitle"></span></p>
+               <p>Genre : <span id="movieGenre"></span></p>
+               <p>Release : <span id="movieRelease"></span></p>
+               <p>Runtime : <span id="movieRuntime"></span></p>
+               <p>Director : <span id="movieDirector"></span></p>
+               <p>Writer : <span id="movieWriter"></span></p>
+               <p>Actor : <span id="movieActors"></span></p>
+               <p>Rating : <span id="movieRating"></span></p>
+           </section>
+           
+	   </div>
+      
+       <!-- FOOTER BAR -->  
+	   <div data-role="footer" data-position="fixed"> <!-- fixed to bottom of screen -->
+		  <h1>Find new films!</h1>
+	   </div> 
+  
+	</div>
+
+<!-- PAGE BREAK -->    
+<!-- PAGE BREAK -->      
+<!-- PAGE BREAK -->        
+    
+  <!-- Page2 -->
+ 
+  <div data-role="page" id="page2">
+      
+      <!-- Panel -->
+      <div data-role="panel" id="myPanel" data-display="overlay">
+      <h2>Panel Header</h2>
+          <a href="#page1" class="ui-btn-inline">Page One</a>
+          <a href="#page2" class="ui-btn-inline">Page Two</a>
+      </div>
+      
+       <!-- HEADER BAR -->  
+	   <div data-role="header" data-position="fixed"> <!-- fixed to top of screen -->
+		  <h1>Theatre Finder</h1>
+	   </div>
+
+	   <!-- Content -->
+	   <div data-role="main" class="ui-content">
+           <a href="#myPanel" data-rel="open">Open panel</a>
+           
+           <!-- Google maps container -->
+           <div id="googleMap" style="height: 400px"></div>
+
+	   </div>
+      
+       <!-- FOOTER BAR -->  
+	   <div data-role="footer" data-position="fixed"> <!-- fixed to bottom of screen -->
+		  <h1>Find your nearest theatre!</h1>
+	   </div> 
+  
+	</div>
+
+<!-- PAGE BREAK -->    
+<!-- PAGE BREAK -->      
+<!-- PAGE BREAK -->        
+  
+
+</body>
+</html>
