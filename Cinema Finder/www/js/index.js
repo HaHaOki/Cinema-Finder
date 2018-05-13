@@ -1,16 +1,6 @@
-/*var paused_count =0;
-var resumed_count = 0;
-var launched_count = 0;
-
-document.addEventListener("deviceready", onDeviceReady, false);
-		
-	
-function updateDisplay() {
-	$("#launched").text("Application launched: " + launched_count);
-	$("#resumed").text("Application paused: " + paused_count);
-	$("#paused").text("Application resumed: " + resumed_count);
-    }
-
+/* OMD api key = "34fc007e";
+Googple key = AIzaSyC6_L1aGCV9RnJfi56DjISvuyJpWCwxLGs
+New key = AIzaSyC8Kt2m8RQlajz04BJhl0uBlueKzo7TzWU
 */
 
 //
@@ -42,11 +32,6 @@ function searchButton() {
 }
 searchbtn.addEventListener("click", searchButton);
 
-/* var feedKey = "34fc007e"; */
-/*Googple key: AIzaSyC6_L1aGCV9RnJfi56DjISvuyJpWCwxLGs
-New key?: AIzaSyC8Kt2m8RQlajz04BJhl0uBlueKzo7TzWU
-*/
-
 //Function for requesting information from the API
 function makeRequest() {
     httpRequest = new XMLHttpRequest();
@@ -73,6 +58,9 @@ function callback() {
         
         
     }
+    
+    //Each response is assigned to an html element
+    
     document.getElementById("movieTitle").innerHTML = title;
     document.getElementById("movieGenre").innerHTML = genre;
     document.getElementById("movieRelease").innerHTML = release;
@@ -83,7 +71,6 @@ function callback() {
     document.getElementById("movieRating").innerHTML = rating;
 }
 
-//document.getElementById('searchbutton').onclick = function()
 document.getElementById("movieInfo").innerHTML = makeRequest();
 
 //
